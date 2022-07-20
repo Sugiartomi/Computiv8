@@ -1,0 +1,30 @@
+[
+    {   
+        "name" : "Tomi",
+        "age" : 27,
+        "email" : "tomi@gmail.com",
+        "password" : "123456",
+        "role" : "owner"
+    },
+    {   
+        "name" : "Arifin",
+        "age" : 27,
+        "email" : "arifin@gmail.com",
+        "password" : "123456",
+        "role" : "owner"
+    },
+    {   
+        "name" : "Asep Kopi",
+        "age" : 27,
+        "email" : "asepkopi@gmail.com",
+        "password" : "qwerty",
+        "role" : "cashier"
+    },
+    {   
+        "name" : "Dadang Konelo",
+        "age" : 27,
+        "email" : "dadangkonelo@gmail.com",
+        "password" : "satuduatiga",
+        "role" : "warehouse"
+    }
+]
