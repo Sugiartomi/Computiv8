@@ -1,5 +1,5 @@
 'use strict';
-let dataUser = require('../data/users.json')
+let dataItems = require('../data/Items.json')
 
 module.exports = {
   up (queryInterface, Sequelize) {
@@ -12,11 +12,11 @@ module.exports = {
      *   isBetaMember: false
      * }], {});
     */
-   dataUser.forEach(e => {
-    e.createdAt = new Date()
-    e.updatedAt = new Date()
-   })
-   return queryInterface.bulkInsert('Users', dataUser, {})
+     dataItems.forEach(e => {
+      e.createdAt = new Date()
+      e.updatedAt = new Date()
+     })
+     return queryInterface.bulkInsert('Items', dataItems, {})
   },
 
   down (queryInterface, Sequelize) {
@@ -26,6 +26,6 @@ module.exports = {
      * Example:
      * await queryInterface.bulkDelete('People', null, {});
      */
-    return queryInterface.bulkDelete('Users', null,{})
+    return queryInterface.bulkDelete('Items', null, {})
   }
 };

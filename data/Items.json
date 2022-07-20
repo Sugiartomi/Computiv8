@@ -1,0 +1,111 @@
+[
+    {
+        "name" : "Radeon RX 6600 8 GB 128 Bit DDR6",
+        "brand" : "Asrock",
+        "imageUrl" : "https://www.asrock.com/Graphics-Card/features/MetalBackplate-Radeon%20RX%206600%20XT%20Challenger%20D%208GB%20OC_mobile.jpg" ,
+        "description" : "GPU: Boost Clock: Up to 2491MHz, Memory: 8GB/128 bit DDR6. 14 Gbps Effective, Stream Processors: 1792, RDNA™ 2 Architecture, Ray Accelerator: 28",
+        "price" : 5500000,
+        "stock" : 10,
+        "CategoryId" : 1
+
+    },
+    {
+        "name" : "GeForce RTX 2060 6 GB 192 Bit DDR6 - Dual EVO OC",
+        "brand" : "Asus",
+        "imageUrl" : "https://images.tokopedia.net/img/cache/500-square/VqbcmM/2022/5/18/fbc2348a-3b3d-44f9-9618-8584b8fc659b.jpg",
+        "description" : "NVIDIA TURING™ GPU architecture and the all-new RTX platform provides up to 6X the performance of previous-generation graphics cards and brings the power of real-time ray tracing and AI to games. DirectX 12 enables new visual effects and rendering techniques for more lifelike gaming.",
+        "price" : 5900000,
+        "stock" : 15,
+        "CategoryId" : 1
+    },
+    {
+        "name" : "Z270I Gaming Pro Carbon AC (Intel Z270, DDR4)",
+        "brand" : "MSI",
+        "imageUrl" : "https://s0.bukalapak.com/img/5325522532/large/MSI_Z270I_GAMING_PRO_CARBON_AC_Z270_LGA1151_DDR4_Mini_ITX_Mo.jpg.webp" ,
+        "description" : "DDR4 Boost with Steel Armor: Give your DDR4 memory a performance boost. VR Ready: Best virtual reality game experience without latency. Mystic Light and Mystic Light Sync: 16.8 milliom colors /17 effects controlled in one click with GAMING APP or mobile devices.",
+        "price" : 2300000,
+        "stock" : 5,
+        "CategoryId" : 2
+    },
+    {
+        "name" : "Z490 Pro4 (Intel Z490, DDR4)",
+        "brand" : "Asrock",
+        "imageUrl" : "https://m.media-amazon.com/images/I/614UiRpBexL._AC_SL400_.jpg",
+        "description" : "Featuring sturdy components and completely smooth power delivery to the CPU. It offers enhanced performance with the lowest temperature for advanced gamers as well.",
+        "price" : 2500000,
+        "stock" : 10,
+        "CategoryId" : 2
+    },
+    {
+        "name" : "DDR4 Vengeance LPX PC25600 16GB",
+        "brand" : "Corsair",
+        "imageUrl" : "https://images.tokopedia.net/img/cache/500-square/product-1/2017/5/8/9126088/9126088_4e063f96-15e1-4564-bafd-ca59d7efbc35_800_481.png",
+        "description" : "Memory Configuration Dual / Quad Channel Memory Series VENGEANCE LPX Memory Type DDR4 Memory Size 32GB Kit (2 x 16GB) Tested Latency 16-18-18-36 Tested Voltage 1.35V",
+        "price" : 1450000,
+        "stock" : 30,
+        "CategoryId" : 3
+    },
+    {
+        "name" : "DDR3 Hyper X Fury PC15000 16GB",
+        "brand" : "Corsair",
+        "imageUrl" : "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full//1016/kingston_kingston-ddr3-pc-15000-hyperx-furry-16gb--8gb-x-2-_full02.jpg",
+        "description" : "Kingston HX316C10FK2/16 The Kingston 16GB HyperX FURY DDR3 1600 MHz DIMM Memory Kit comes with two 8GB memory modules to deliver a total memory capacity of 16GB for your desktop computer. The DDR3 modules are compatible with systems that have 240-pin slots. For performance, each module has been tested to run up to 1600 MHz at a latency timing of 10-10-10 under 1.5V. Moreover, Kingston has designed the pair of memory modules to operate at 1333 MHz or 1066 MHz for compatibility with older motherboards. They sport sixteen 512M x 8-bit DDR3 FBGA components per module. Furthermore, Kingston has armed each memory module with a blue heatsink to cool the components.",
+        "price" : 1150000,
+        "stock" : 30,
+        "CategoryId" : 3
+    },
+    {
+        "name" : "Ryzen 5 5600",
+        "brand" : "AMD",
+        "imageUrl" : "https://images.tokopedia.net/img/cache/500-square/VqbcmM/2022/4/20/1caa0281-cf7a-4d29-ac5d-57d8a664f55c.jpg",
+        "description" : "Can deliver fast 100+ FPS performance in the world's most popular games, discrete graphics card required. 6 Cores and 12 processing threads, bundled with the AMD Wraith Stealth cooler",
+        "price" : 3050000,
+        "stock" : 10,
+        "CategoryId" : 4
+    },
+    {
+        "name" : "i5 12400F",
+        "brand" : "Corsair",
+        "imageUrl" : "https://cf.shopee.co.id/file/c1f839bd9f35f93d6905de3436a61f7c",
+        "description" : "Intel Core i5-12400F 12th Gen.Processor. Discrete Graphics Required. Threads: 12, Cores: 6, Frequency: 2.50 GHz, Max Turbo Frequency : 4.40 GHz, Cache: 16 MB SmartCache, Socket Supported: FCLGA1700",
+        "price" : 4850000,
+        "stock" : 10,
+        "CategoryId" : 4
+    },
+    {
+        "name" : "TUF Gaming 550W - 80+ Bronze",
+        "brand" : "Asus",
+        "imageUrl" : "https://www.asus.com/media/global/gallery/6zqhgxtkkwbmeizz_setting_xxx_0_90_end_2000.png",
+        "description" : "TUF Gaming series PSUs bring military-grade components and a robust cooling solution together to create a power platform you can depend on. High-quality capacitors and chokes undergo a myriad of tests, including extreme temperatures and vibration tests, to ensure they meet rigorous military specifications.",
+        "price" : 1000000,
+        "stock" : 15,
+        "CategoryId" : 5
+    },
+    {
+        "name" : "SF Series 450W",
+        "brand" : "Corsair",
+        "imageUrl" : "https://images.tokopedia.net/img/cache/500-square/product-1/2020/7/21/107873568/107873568_759e5bc2-db49-4867-b789-67e8692c14b7_614_614.jpg",
+        "description" : "80 Plus GoldPower 450 WattsFanless mode YesContinuous output rated temperature (C) 40C. Dimensions 100mm x 63mm x 125mm, ATX Connector 1, EPS Connector 1, PCIe Connector 2, SATA Connector 4, Plug Type NA",
+        "price" : 1700000,
+        "stock" : 15,
+        "CategoryId" : 5
+    },
+    {
+        "name" : "Falcon FRGB",
+        "brand" : "Aerocool",
+        "imageUrl" : "https://aerocool.io/wp-content/uploads/2021/10/Falcon-Product-Photo-Gallery-1042x589-G-BK-V1-04.jpg",
+        "description" : "Featuring a mesh front panel design, this high-performance mid tower case delivers superior air flow while allowing for viewing of your front LED fans. Full tempered glass or acrylic side panel showcases the inside of your rig. Supports liquid cooling in the front and rear of the case for maximum efficiency cooling." ,
+        "price" : 1700000,
+        "stock" : 15,
+        "CategoryId" : 6
+    },
+    {
+        "name" : "AXEL WHITE VERSION",
+        "brand" : "Cube Gaming",
+        "imageUrl" : "https://images.tokopedia.net/img/cache/500-square/VqbcmM/2021/11/2/5871fe5c-74c6-446b-b214-18dc6dcd9046.jpg",
+        "description" : "Cube Gaming AXEL - temperd glass version - mini case - motherboard mini itx & MATX compatible",
+        "price" : 1700000,
+        "stock" : 15,
+        "CategoryId" : 6
+    }
+]

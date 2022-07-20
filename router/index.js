@@ -4,9 +4,13 @@ const Controller = require('../controllers/controller')
 router.get('/', Controller.login)
 router.post('/', Controller.loginPost)
 
-router.get('/owner', Controller.owner)
-router.get('/cashier', Controller.cashier)
-router.get('/warehouse', Controller.warehouse)
+router.get('/owner/:id', Controller.owner)
+
+
+router.get('/cashier/:id', Controller.cashier)
+router.get('/cashier/:cashierId/detail/:itemId', Controller.detailItem)
+
+router.get('/warehouse/:id', Controller.warehouse)
 
 
 module.exports = router

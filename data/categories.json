@@ -1,0 +1,26 @@
+[
+    {   
+        "id" : 1,
+        "category" : "vga"
+    },
+    {
+        "id" : 2,
+        "category" : "motherboard"
+    },
+    {
+        "id" : 3,
+        "category" : "ram"
+    },
+    {
+        "id" : 4,
+        "category" : "processor"
+    },
+    {
+        "id" : 5,
+        "category" : "psu"
+    },
+    {
+        "id" : 6,
+        "category" : "casing"
+    }
+]
