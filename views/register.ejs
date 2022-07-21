@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register-page</title>
+    <%- include('partials/linkstyling.ejs') %> 
+</head>
+<body style="text-align: center;">
+    <%- include('partials/navbar.ejs') %> 
+    <br><br><br><br>
+    <h1>Holla!</h1>
+    <h4>Register your new employee to join your amazing store !</h4>
+    <br><br>
+    <form action="/register" method="post">
+        <p>First Name</p>
+        <input type="text" name="firstName" placeholder="Ex: kakang">
+        <p>Last Name</p>
+        <input type="text" name="lastName" placeholder="Ex: suharja">
+        <p>Date Of Birth</p>
+        <input type="date" name="dateOfBirth">
+        <p>Education</p>
+        <input type="radio" name="education" value="S1">S1
+        <input type="radio" name="education" value="SMA">SMA
+        <input type="radio" name="education" value="SMK">SMK
+        <p>E-mail</p>
+        <input type="text" name="email">
+        <p>Password</p>
+        <input type="text" name="password">
+        <p>Position</p>
+        <input type="radio" name="role" value="kasir"> Kasir
+        <input type="radio" name="role" value="gudang"> Gudang
+        <br><br>
+        <button type="submit">register</button>
+    </form>
+</body>
+</html>

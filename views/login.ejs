@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login-page</title>
+    <%- include('partials/linkstyling.ejs') %>
+</head>
+<body style="text-align: center;">
+    <%- include('partials/navbar.ejs') %> 
+    <br><br><br><br>
+    <h1>Holla!</h1>
+    <h4>Silahkan masukan email dan password</h4>
+    <br><br>
+    <form action="/login" method="post">
+        <p>email</p>
+        <input type="text" name="email">
+        <p>Password</p>
+        <input type="password" name="password">
+        <br><br>
+        <button type="submit">login</button>
+    </form>
+</body>
+</html>

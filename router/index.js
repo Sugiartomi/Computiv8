@@ -1,15 +1,21 @@
 const router = require('express').Router()
 const Controller = require('../controllers/controller')
+const userController = require('../controllers/auth-controller')
 
+router.get('/', (req,res)=>{
+    res.render('home')
+})
 router.get('/login-owner', Controller.loginOwner)
 router.post('/login-owner', Controller.loginOwnerPost)
 
 
-// router.post('/', Controller.xxx)
-// router.get('/owner', Controller.xxx)
-// router.get('/owner/addUser', Controller.xxx)
-// router.post('/owner/addUser', Controller.xxx)
-// router.get('/owner/editUser', Controller.xxx)
+router.get('/register', userController.registerForm)
+router.post('/register', userController.postRegister)
+// router.get('/owner/addUser', Controller.xxx) //done
+// router.post('/owner/addUser', Controller.xxx) // done
+router.get('/login', userController.loginUser)
+router.post('/login', userController.postLogin)
+// router.get('/owner/editUser', Controller.xxx) 
 // router.post('/owner/editUser', Controller.xxx)
 // router.get('/owner/deleteUser', Controller.xxx)
 
