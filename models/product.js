@@ -15,6 +15,7 @@ module.exports = (sequelize, DataTypes) => {
       Product.belongsTo(models.User)
       Product.hasMany(models.Cart)
     }
+   
   }
   Product.init({
     name: DataTypes.STRING,

@@ -26,6 +26,10 @@ router.post('/register', isOwner, userController.postRegister)
 //==============OWNER============================
 
 router.get('/owner', Controller.owner)
+router.get('/employee', Controller.employee)
+router.get('/employee/:id/edit', Controller.editEmployee)
+router.post('/employee/:id/edit', Controller.editEmployeePost)
+router.get('/employee/:id/delete', Controller.deleteEmployee)
 
 // ==============CASHIER=========================
 router.get('/products', Controller.products)

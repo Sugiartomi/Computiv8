@@ -1,4 +1,5 @@
 let { User, Category, Product, Profile, Cart } = require('../models')
+const { Op } = require("sequelize")
 
 class Controller {
 
@@ -10,6 +11,33 @@ class Controller {
     static owner(req,res) {
         res.render('owner')
     }
+    static employee(req,res){
+        User.findAll({where : {role: ["warehouse", "products"]}, include : Profile})
+        // .then(data => res.send(data))
+        .then(data => res.render('employee',{data}))
+    }
+    static editEmployee(req,res){
+        Profile.findOne({where : {id : req.params.id}, include : User})
+        .then(data => res.render('editEmployee',{data}))
+        .catch(err => res.send(err))
+    }
+    static editEmployeePost(req,res){
+        let {firstName, lastName, dateOfBirth, education, email, role} = req.body
+
+        User.findOne({where :{id:req.params.id}})
+        .then( result => result.update({email,role}))
+        .then(() => Profile.findOne({where :{id:req.params.id}}))
+        .then(result => result.update({firstName, lastName, dateOfBirth, education}))
+        .then(() => res.redirect('/employee'))
+        .catch(err => res.send(err))
+    }
+    static deleteEmployee(req,res){
+        Profile.destroy({where : {id : req.params.id}})
+        .then(() => User.destroy({where : {id : req.params.id}}))
+        .then(()=> res.redirect('/employee'))
+        .catch(err => res.send(err))
+    }
+
 
     // ==================CASHIER=======================
 

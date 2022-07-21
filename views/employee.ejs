@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th>No</th>
+            <th>Nama</th>
+            <th>Umur</th>
+            <th>Pendidika</th>
+            <th>email</th>
+            <th>Divisi</th>
+            <th>-----</th>
+        </tr>
+        <%data.forEach((e, i) => {%>
+        <tr>
+                <td><%=i +1%></td>
+                <td><%=e.Profile.fullName%></td>
+                <td><%=e.Profile.age(e.Profile.dateOfBirth)%></td>
+                <td><%=e.Profile.education%></td>
+                <td><%=e.email%></td>
+                <td><%=e.role%></td>   
+                <td>
+                    <a href="/employee/<%=e.id%>/edit"><button>Edit</button></a>
+                    <a href="/employee/<%=e.id%>/delete"><button>Delete</button></a>
+                </td>   
+            </tr>
+        <%})%>
+    </table>
+</body>
+</html>

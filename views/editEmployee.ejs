@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register-page</title>
+    <%- include('partials/linkstyling.ejs') %> 
+</head>
+<body style="text-align: center;">
+    <%- include('partials/navbar.ejs') %> 
+    <br><br><br><br>
+    <h1>Holla!</h1>
+    <br><br>
+    <form action="/employee/<%=data.id%>/edit" method="post">
+        <p>First Name</p>
+        <input type="text" name="firstName" placeholder="Ex: kakang" value="<%=data.firstName%>">
+        <p>Last Name</p>
+        <input type="text" name="lastName" placeholder="Ex: suharja" value="<%=data.lastName%>">
+        <p>Date Of Birth</p>
+        <input type="date" name="dateOfBirth" value="<%=data.formattedDate%>">
+        <p>Education</p>
+        <input type="radio" name="education" value="S1" <%=data.education == "S1"? "checked":""%>>S1
+        <input type="radio" name="education" value="SMA" <%=data.education == "SMA"? "checked":""%>>SMA
+        <input type="radio" name="education" value="SMK" <%=data.education == "SMK"? "checked":""%>>SMK
+        <p>E-mail</p>
+        <input type="text" name="email" value="<%=data.User.email%>">
+        <p>Position</p>
+        <input type="radio" name="role" value="products" <%=data.User.role == "products"? "checked":""%>> cashier
+        <input type="radio" name="role" value="warehouse" <%=data.User.role == "warehouse"? "checked":""%>> warehouse
+        <br><br>
+        <button type="submit">register</button>
+    </form>
+</body>
+</html>
