@@ -32,10 +32,10 @@ module.exports = {
           model : 'Categories'
         }
       },
-      StoreId: {
+      UserId: {
         type: Sequelize.INTEGER,
         references :{
-          model : 'Stores'
+          model : 'Users'
         }
       },
       createdAt: {

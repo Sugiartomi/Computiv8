@@ -1,0 +1,9 @@
+[
+    {   
+        "firstName" : "Dapit",
+        "lastName" : "Backend",
+        "dateOfBirth" : "01-01-1994",
+        "education" : "S1",
+        "UserId" : 1
+    }
+]

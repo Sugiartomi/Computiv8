@@ -1,5 +1,5 @@
 'use strict';
-let dataItems = require('../data/Items.json')
+let dataProduct = require('../data/products.json')
 
 module.exports = {
   up (queryInterface, Sequelize) {
@@ -12,11 +12,11 @@ module.exports = {
      *   isBetaMember: false
      * }], {});
     */
-     dataItems.forEach(e => {
+     dataProduct.forEach(e => {
       e.createdAt = new Date()
       e.updatedAt = new Date()
      })
-     return queryInterface.bulkInsert('Items', dataItems, {})
+     return queryInterface.bulkInsert('Items', dataProduct, {})
   },
 
   down (queryInterface, Sequelize) {

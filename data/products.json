@@ -7,7 +7,7 @@
         "price" : 5500000,
         "stock" : 10,
         "CategoryId" : 1,
-        "StoreId" : 1
+        "UserId" : 1
     },
     {
         "name" : "GeForce RTX 2060 6 GB 192 Bit DDR6 - Dual EVO OC",
@@ -17,7 +17,7 @@
         "price" : 5900000,
         "stock" : 15,
         "CategoryId" : 1,
-        "StoreId" : 1
+        "UserId" : 1
     },
     {
         "name" : "Z270I Gaming Pro Carbon AC (Intel Z270, DDR4)",
@@ -27,7 +27,7 @@
         "price" : 2300000,
         "stock" : 5,
         "CategoryId" : 2,
-        "StoreId" : 1
+        "UserId" : 1
     },
     {
         "name" : "Z490 Pro4 (Intel Z490, DDR4)",
@@ -37,7 +37,7 @@
         "price" : 2500000,
         "stock" : 10,
         "CategoryId" : 2,
-        "StoreId" : 1
+        "UserId" : 1
     },
     {
         "name" : "DDR4 Vengeance LPX PC25600 16GB",
@@ -47,7 +47,7 @@
         "price" : 1450000,
         "stock" : 30,
         "CategoryId" : 3,
-        "StoreId" : 1
+        "UserId" : 1
     },
     {
         "name" : "DDR3 Hyper X Fury PC15000 16GB",
@@ -57,7 +57,7 @@
         "price" : 1150000,
         "stock" : 30,
         "CategoryId" : 3,
-        "StoreId" : 1
+        "UserId" : 1
     },
     {
         "name" : "Ryzen 5 5600",
@@ -67,7 +67,7 @@
         "price" : 3050000,
         "stock" : 10,
         "CategoryId" : 4,
-        "StoreId" : 1
+        "UserId" : 1
     },
     {
         "name" : "i5 12400F",
@@ -77,7 +77,7 @@
         "price" : 4850000,
         "stock" : 10,
         "CategoryId" : 4,
-        "StoreId" : 1
+        "UserId" : 1
     },
     {
         "name" : "TUF Gaming 550W - 80+ Bronze",
@@ -87,7 +87,7 @@
         "price" : 1000000,
         "stock" : 15,
         "CategoryId" : 5,
-        "StoreId" : 1
+        "UserId" : 1
     },
     {
         "name" : "SF Series 450W",
@@ -97,7 +97,7 @@
         "price" : 1700000,
         "stock" : 15,
         "CategoryId" : 5,
-        "StoreId" : 1
+        "UserId" : 1
     },
     {
         "name" : "Falcon FRGB",
@@ -107,7 +107,7 @@
         "price" : 1700000,
         "stock" : 15,
         "CategoryId" : 6,
-        "StoreId" : 1
+        "UserId" : 1
     },
     {
         "name" : "AXEL WHITE VERSION",
@@ -117,6 +117,6 @@
         "price" : 1700000,
         "stock" : 15,
         "CategoryId" : 6,
-        "StoreId" : 1
+        "UserId" : 1
     }
 ]

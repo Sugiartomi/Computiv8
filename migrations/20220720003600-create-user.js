@@ -8,12 +8,6 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      name: {
-        type: Sequelize.STRING
-      },
-      age: {
-        type: Sequelize.INTEGER
-      },
       email: {
         type: Sequelize.STRING
       },
@@ -22,13 +16,6 @@ module.exports = {
       },
       role: {
         type: Sequelize.STRING
-      },
-      StoreId: {
-        type: Sequelize.INTEGER,
-        references : {
-          model: 'Stores',
-          key: 'id'
-        }
       },
       createdAt: {
         allowNull: false,

@@ -1,34 +1,7 @@
 [
     {   
-        "name" : "Tomi",
-        "age" : 27,
-        "email" : "tomi@gmail.com",
+        "email" : "dapitbackend@gmail.com",
         "password" : "123456",
-        "role" : "owner",
-        "StoreId" : 1
-    },
-    {   
-        "name" : "Arifin",
-        "age" : 27,
-        "email" : "arifin@gmail.com",
-        "password" : "123456",
-        "role" : "owner",
-        "StoreId" : 1
-    },
-    {   
-        "name" : "Asep Kopi",
-        "age" : 27,
-        "email" : "asepkopi@gmail.com",
-        "password" : "qwerty",
-        "role" : "cashier",
-        "StoreId" : 1
-    },
-    {   
-        "name" : "Dadang Konelo",
-        "age" : 27,
-        "email" : "dadangkonelo@gmail.com",
-        "password" : "satuduatiga",
-        "role" : "warehouse",
-        "StoreId" : 1
+        "role" : "owner"
     }
 ]
