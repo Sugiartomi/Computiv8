@@ -2,28 +2,14 @@ let { User, Category, Product, Profile, Cart } = require('../models')
 
 class Controller {
 
- static loginOwner(req, res) {
-    res.render('loginOwner')
- }
- static loginOwnerPost(req,res) {
-    let {email, password} = req.body
-    User.findAll()
-    .then(data => {
-        data.forEach(el => {
-            if(el.email == email && el.password == password){
-                res.render('home')
-            } else throw "invalid email or password"
-        });
-    })
-    .catch(err => res.send(err))
- }
+    // =======================================================
 
- // =======================================================
-
- static home(req,res){
-    res.render('home')
- }
-
+    static home(req, res) {
+        res.render('home')
+    }
+    static owner(req,res) {
+        res.render('owner')
+    }
 
     // ==================CASHIER=======================
 
@@ -130,20 +116,21 @@ class Controller {
     }
     static editProductPost(req, res) {
         let { name, brand, imageUrl, price, stock, CategoryId, description } = req.body
-        Product.findOne({where : {id : req.params.id} })
-        .then( product => {
-            console.log(product);
-            return product.update({
-                name, brand, imageUrl, price, stock, CategoryId, description,
-                createdAt: new Date(), updatedAt: new Date()})
-        })
-        .then(() => res.redirect('/warehouse'))
-        .catch(err => res.send(err))
+        Product.findOne({ where: { id: req.params.id } })
+            .then(product => {
+                console.log(product);
+                return product.update({
+                    name, brand, imageUrl, price, stock, CategoryId, description,
+                    createdAt: new Date(), updatedAt: new Date()
+                })
+            })
+            .then(() => res.redirect('/warehouse'))
+            .catch(err => res.send(err))
     }
     static deleteProduct(req, res) {
-        Product.destroy({where : {id : req.params.id}})
-        .then( () => res.redirect('/warehouse'))
-        .catch(err => res.send(err))
+        Product.destroy({ where: { id: req.params.id } })
+            .then(() => res.redirect('/warehouse'))
+            .catch(err => res.send(err))
     }
 }
 

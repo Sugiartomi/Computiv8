@@ -13,16 +13,19 @@ const { isAdmin, isOwner } = require('../middleware/auth-js')
 //     }
 // }) 
 
+router.get('/', Controller.home)
 
-router.get('/login-owner', Controller.loginOwner)
-router.post('/login-owner', Controller.loginOwnerPost)
+// =============================================
+
 router.get('/login', userController.loginUser)
 router.post('/login', userController.postLogin)
-router.get('/', Controller.home)
 router.get('/logout', userController.getLogOut)
-
 router.get('/register', isOwner, userController.registerForm)
 router.post('/register', isOwner, userController.postRegister)
+
+//==============OWNER============================
+
+router.get('/owner', Controller.owner)
 
 // ==============CASHIER=========================
 router.get('/products', Controller.products)
