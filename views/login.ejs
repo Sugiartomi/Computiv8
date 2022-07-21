@@ -12,6 +12,9 @@
     <h1>Holla!</h1>
     <h4>Silahkan masukan email dan password</h4>
     <br><br>
+    <% if(error){ %>
+        <p style="color: red"><%= error %></p>
+    <% } %> 
     <form action="/login" method="post">
         <p>email</p>
         <input type="text" name="email">

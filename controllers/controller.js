@@ -20,6 +20,10 @@ class Controller {
 
  // =======================================================
 
+ static home(req,res){
+    res.render('home')
+ }
+
  static products(req, res){
     let data;
     Product.findAll()

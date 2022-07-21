@@ -22,7 +22,8 @@ class userController {
         })  
     }
     static loginUser(req,res){
-        res.render('login')
+        const { error } = req.query
+        res.render('login', { error })
     }
     static postLogin(req,res){
         const { email, password } = req.body
@@ -31,7 +32,10 @@ class userController {
             if(user){
                 const isValidPassword = bcryptjs.compareSync(password, user.password)
                 if(isValidPassword){
-                    // req.sesion
+                    req.session.userId = user.id
+                    req.session.role = user.role
+                    console.log(user.id);
+                    console.log(user.role);
                     return res.redirect('/')
                 } else {
                     const error = `invalid username`;
@@ -44,6 +48,15 @@ class userController {
         })
         .catch(err=>{
             res.send(err)
+        })
+    }
+    static getLogOut(req,res){
+        req.session.destroy((err)=>{
+            if(err){
+                res.send(err)
+            } else {
+                res.redirect('/')
+            }
         })
     }
 }
