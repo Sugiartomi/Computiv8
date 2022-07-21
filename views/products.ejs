@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+</head>
+<body>
+    <h1>Computiv8</h1>
+    <p>Cart : <%=total%></p>
+    <a href="/products/checkout">
+        <button>Checkout</button>
+    </a>
+    <br><br>
+    <table border="1" style="text-align: center;">
+        <tr>
+            <th>No.</th>
+            <th>Gambar</th>
+            <th>Nama</th>
+            <th>Merk</th>
+            <th>Harga</th>
+            <th>---</th>
+        </tr>
+        <%data.forEach((el, idx) => {%>
+            <tr>
+                <td><%=idx + 1%></td>
+                <td><img src="<%=el.imageUrl%>" alt="" style="width: 200;"></td>
+                <td><%=el.name%></td>
+                <td><%=el.brand%></td>
+                <td><%=el.price%></td>
+                <td>
+                    <a href="/products/<%=el.id%>/detail"><button>See Detail</button></a>
+                    <a href="/products/<%=el.id%>/buy"><button>Buy</button></a>
+                    
+                </td>
+            </tr>
+        <%})%>
+    </table>
+</body>
+</html>

@@ -4,6 +4,13 @@ const Controller = require('../controllers/controller')
 router.get('/login-owner', Controller.loginOwner)
 router.post('/login-owner', Controller.loginOwnerPost)
 
+router.get('/products', Controller.products)
+router.get('/products/checkout', Controller.checkout)
+router.get('/products/cart/purchase', Controller.purchase)
+// router.get('/products/:id/detail', Controller.productDetail)
+router.get('/products/:id/cart/delete', Controller.cartDelete)
+router.get('/products/:id/buy', Controller.buyProduct)
+
 
 // router.post('/', Controller.xxx)
 // router.get('/owner', Controller.xxx)
