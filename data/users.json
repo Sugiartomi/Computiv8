@@ -4,27 +4,31 @@
         "age" : 27,
         "email" : "tomi@gmail.com",
         "password" : "123456",
-        "role" : "owner"
+        "role" : "owner",
+        "StoreId" : 1
     },
     {   
         "name" : "Arifin",
         "age" : 27,
         "email" : "arifin@gmail.com",
         "password" : "123456",
-        "role" : "owner"
+        "role" : "owner",
+        "StoreId" : 1
     },
     {   
         "name" : "Asep Kopi",
         "age" : 27,
         "email" : "asepkopi@gmail.com",
         "password" : "qwerty",
-        "role" : "cashier"
+        "role" : "cashier",
+        "StoreId" : 1
     },
     {   
         "name" : "Dadang Konelo",
         "age" : 27,
         "email" : "dadangkonelo@gmail.com",
         "password" : "satuduatiga",
-        "role" : "warehouse"
+        "role" : "warehouse",
+        "StoreId" : 1
     }
 ]
