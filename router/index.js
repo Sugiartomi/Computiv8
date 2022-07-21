@@ -24,31 +24,25 @@ router.get('/logout', userController.getLogOut)
 router.get('/register', isOwner, userController.registerForm)
 router.post('/register', isOwner, userController.postRegister)
 
+// ==============CASHIER=========================
 router.get('/products', Controller.products)
 router.get('/products/checkout', Controller.checkout)
 router.get('/products/cart/purchase', Controller.purchase)
-// router.get('/products/:id/detail', Controller.productDetail)
+router.get('/products/:id/detail', Controller.productDetail)
 router.get('/products/:id/cart/delete', Controller.cartDelete)
 router.get('/products/:id/buy', Controller.buyProduct)
 
+// ==============WAREHOUSE=========================
+router.get('/warehouse', Controller.warehouse)
+router.get('/warehouse/add/product', Controller.addProduct)
+router.post('/warehouse/add/product', Controller.addProductPost)
+router.get('/warehouse/add/category', Controller.addCategory)
+router.post('/warehouse/add/category', Controller.addCategoryPost)
+router.get('/warehouse/:id/product/edit', Controller.editProduct)
+router.post('/warehouse/:id/product/edit', Controller.editProductPost)
+router.get('/warehouse/:id/product/delete', Controller.deleteProduct)
 
-// router.get('/owner/editUser', Controller.xxx) 
-// router.post('/owner/editUser', Controller.xxx)
-// router.get('/owner/deleteUser', Controller.xxx)
 
-// //MWowner
-
-// router.get('/cashier/:id', Controller.xxx)
-// router.get('/cashier/:cahierId/detail/:ProductId', Controller.xxx)
-// router.get('/cashier/:cahierId/buy/:ProductId', Controller.xxx)
-// router.post('/cashier/:cahierId/buy/:ProductId', Controller.xxx)
-
-// router.get('/warehouse/:id', Controller.xxx)
-// router.get('/warehouse/:id/add', Controller.xxx)
-// router.post('/warehouse/:id/add', Controller.xxx)
-// router.get('/warehouse/:id/edit', Controller.xxx)
-// router.post('/warehouse/:id/edit', Controller.xxx)
-// router.get('/warehouse/:id/delete', Controller.xxx)
 
 
 module.exports = router

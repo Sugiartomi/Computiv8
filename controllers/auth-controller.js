@@ -34,9 +34,9 @@ class userController {
                 if(isValidPassword){
                     req.session.userId = user.id
                     req.session.role = user.role
-                    console.log(user.id);
-                    console.log(user.role);
-                    return res.redirect('/')
+                    
+                        return res.redirect(`/${user.role}`)
+                    
                 } else {
                     const error = `invalid username`;
                     return res.redirect(`/login?error=${error}`)

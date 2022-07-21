@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add new product</title>
+</head>
+<body>
+    <form action="/warehouse/<%=data.id%>/product/edit" method="post">
+        <h2>== Tambah barang baru ==</h2>
+        <p>Nama barang :</p>
+        <input type="text" name="name" value="<%=data.name%>">
+        <p>Merk :</p>
+        <input type="text" name="brand" value="<%=data.brand%>">
+        <p>Gambar :</p>
+        <input type="text" name="imageUrl" value="<%=data.imageUrl%>">
+        <p>Harga :</p>
+        <input type="number" name="price" value="<%=data.price%>">
+        <p>Stock :</p>
+        <input type="number" name="stock" value="<%=data.stock%>">
+        <p>Kategori :</p>
+        <select name="CategoryId" id="">
+            <option value="" disabled>-- Choose --</option>
+            <%category.forEach(e =>{%>
+                <option value="<%=e.id%>"  <%=e.id == data.CategoryId? "selected" : ""%> ><%=e.category%></option>
+            <%})%>
+        </select>
+        <p>Deskripsi :</p>
+        <input type="text" name="description" value="<%=data.description%>">
+        <button type="submit">Tambah</button>
+    </form>
+</body>
+</html>
