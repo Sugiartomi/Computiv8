@@ -16,7 +16,7 @@ module.exports = {
       e.createdAt = new Date()
       e.updatedAt = new Date()
      })
-     return queryInterface.bulkInsert('Items', dataProduct, {})
+     return queryInterface.bulkInsert('Products', dataProduct, {})
   },
 
   down (queryInterface, Sequelize) {
@@ -26,6 +26,6 @@ module.exports = {
      * Example:
      * await queryInterface.bulkDelete('People', null, {});
      */
-    return queryInterface.bulkDelete('Items', null, {})
+    return queryInterface.bulkDelete('Products', null, {})
   }
 };
