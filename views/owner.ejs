@@ -4,11 +4,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Owner</title>
+    <%- include('partials/linkstyling.ejs') %>
+    
 </head>
 <body>
+    <%- include('partials/navbarLogin.ejs') %>
+    <br><br>
     <h2>Manage :</h2>
-    <a href="/products"><Button>STORE</Button></a>
-    <a href="/employee"><Button>EMPLOYEE</Button></a>
-    <a href="/warehouse"><Button>WAREHOUSE</Button></a>
+    <div class="container">
+        <main class="grid">
+            <article>
+                <img src="" alt="">
+                <div class="text">
+                    <h3>STORE</h3>
+                    <p>store</p>
+                    <a href="/products"><button>STORE</button></a>
+                </div>
+            </article>
+        </main>
+    </div>
+    <div class="container">
+        <main class="grid">
+            <article>
+                <img src="" alt="">
+                <div class="text">
+                    <h3>EMPLOYEE</h3>
+                    <p>employee</p>
+                    <a href="/employee"><button>EMPLOYEE</button></a>
+                </div>
+            </article>
+        </main>
+    </div>
+    <div class="container">
+        <main class="grid">
+            <article>
+                <img src="" alt="">
+                <div class="text">
+                    <h3>WAREHOUSE</h3>
+                    <p>warehouse</p>
+                    <a href="/products"><button>WAREHOUSE</button></a>
+                </div>
+            </article>
+        </main>
+    </div>
 </body>
 </html>

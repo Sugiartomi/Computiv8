@@ -4,24 +4,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products</title>
+    <style>
+        #customers {
+          font-family: Arial, Helvetica, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        #customers td, #customers th {
+          border: 1px solid #ddd;
+          padding: 8px;
+        }
+        
+        #customers tr:nth-child(even){background-color: #f2f2f2;}
+        
+        #customers tr:hover {background-color: #ddd;}
+        
+        #customers th {
+          padding-top: 12px;
+          padding-bottom: 12px;
+          text-align: left;
+          background-color: #04AA6D;
+          color: white;
+        }
+        .btn {
+        background-color: DodgerBlue;
+        border: none;
+        color: white;
+        padding: 12px 16px;
+        font-size: 16px;
+        cursor: pointer;
+        }
 
+        /* Darker background on mouse-over */
+        .btn:hover {
+        background-color: RoyalBlue;
+        }
+        </style>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/ce09140c93.js" crossorigin="anonymous"></script>
+<%- include('partials/navbarLogin.ejs') %>
+<%- include('partials/linkstyling.ejs') %>
 </head>
 <body>
-
-    <br><br><br><br>
-    <p>Cart : <%=total%></p>
+    <br><br><br>
     <a href="/products/checkout">
-        <button>Checkout</button>
+    <button type="button" class="btn btn-lg btn-primary" disabled><i class="fas fa-shopping-cart"></i></i> : <%=total%></button>
+        <!-- <button><i class="fa-solid fa-cart-shopping-fast"></i>Checkout</button> -->
+        <button type="button" class="btn btn-secondary btn-lg" disabled>Checkout</button>
     </a>
     <br><br>
-    <table border="1" style="text-align: center;">
+    <table border="1" style="text-align: center;" id="customers">
         <tr>
             <th>No.</th>
             <th>Gambar</th>
             <th>Nama</th>
             <th>Merk</th>
             <th>Harga</th>
-            <th>---</th>
+            <th>More ..</th>
         </tr>
         <%data.forEach((el, idx) => {%>
             <tr>
