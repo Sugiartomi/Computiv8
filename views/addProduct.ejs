@@ -4,8 +4,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add new product</title>
+    <%- include('partials/linkstyling.ejs') %>
 </head>
 <body>
+    <%- include('partials/navbarhome.ejs') %>
+    <br>
     <form action="/warehouse/add/product" method="post">
         <h2>== Tambah barang baru ==</h2>
         <p>Nama barang :</p>
