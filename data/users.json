@@ -3,5 +3,10 @@
         "email" : "dapitbackend@gmail.com",
         "password" : "123456",
         "role" : "owner"
+    },
+      {   
+        "email" : "tomi@gmail.com",
+        "password" : "123456",
+        "role" : "owner"
     }
 ]
